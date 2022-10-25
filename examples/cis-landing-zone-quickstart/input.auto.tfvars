@@ -17,27 +17,27 @@ dynamic_groups = {
     description : "CIS Landing Zone dynamic group for security functions execution.",      
     matching_rule : "ALL {resource.type = 'fnfunc',resource.compartment.id = 'REPLACE-THIS-BY-THE-SECURITY-COMPARTMENT-OCID'}", 
     defined_tags : null, 
-    freeform_tags : {"cis-landing-zone":"quickstart","grp-type":"dyn-security" }
+    freeform_tags : {"cis-landing-zone":"quickstart","roles":"dyn-security-function" }
   },
   APPDEV-FUN-DYN-GROUP : { 
     name : "cislz-appdev-fun-dynamic-group",  
     description : "CIS Landing Zone dynamic group for application functions execution.",      
     matching_rule : "ALL {resource.type = 'fnfunc',resource.compartment.id = 'REPLACE-THIS-BY-THE-APPLICATION-COMPARTMENT-OCID'}", 
     defined_tags : null, 
-    freeform_tags : {"cis-landing-zone":"quickstart","grp-type":"dyn-application" }
+    freeform_tags : {"cis-landing-zone":"quickstart","roles":"dyn-application-function" }
   },  
   APPDEV-COMPUTE-AGENT-DYN-GROUP : { 
     name : "cislz-appdev-computeagent-dynamic-group",  
     description : "CIS Landing Zone dynamic group for Compute Agent plugin execution.",      
     matching_rule : "ALL {resource.type = 'managementagent',resource.compartment.id = 'REPLACE-THIS-BY-THE-APPLICATION-COMPARTMENT-OCID'}", 
     defined_tags : null, 
-    freeform_tags : {"cis-landing-zone":"quickstart","grp-type":"dyn-application" }
+    freeform_tags : {"cis-landing-zone":"quickstart","roles":"dyn-compute-agent" }
   },                                        
   DATABASE-KMS-DYN-GROUP : { 
     name : "cislz-database-kms-dynamic-group",  
     description : "CIS Landing Zone dynamic group for databases accessing Key Management service (aka Vault service).",      
     matching_rule : "ALL {resource.compartment.id = 'REPLACE-THIS-BY-THE-DATABASE-COMPARTMENT-OCID'}", 
     defined_tags : null, 
-    freeform_tags : {"cis-landing-zone":"quickstart","grp-type":"dyn-database" }
+    freeform_tags : {"cis-landing-zone":"quickstart","roles":"dyn-database-kms" }
   }
 }
