@@ -75,7 +75,7 @@ dynamic_groups = {
   
 ```
 
-3. Check the provided *main.tf* file. It calls the groups module for resource management. 
+3. Check the provided *main.tf* file. It calls the dynamic groups module for resource management. 
 
 `main.tf`:
 
